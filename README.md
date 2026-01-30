@@ -1,7 +1,7 @@
 # MIME Guard
 
 [![Latest Version](https://img.shields.io/packagist/v/arz-cle/mime-guard.svg?style=flat-square)](https://packagist.org/packages/arz-cle/mime-guard)
-[![License](https://img.shields.io/packagist/l/arz-cle/mime-guard.svg?style=flat-square)](LICENSE)
+[![License](https://img.shields.io/github/license/arz-cle/mime-guard?style=flat-square)](LICENSE)
 [![Statamic 5+](https://img.shields.io/badge/Statamic-5.x_|_6.x-FF269E?style=flat-square)](https://statamic.com)
 [![PHP 8.2+](https://img.shields.io/badge/PHP-8.2+-777BB4?style=flat-square)](https://php.net)
 
