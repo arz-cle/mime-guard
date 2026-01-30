@@ -1,5 +1,6 @@
 # MIME Guard
 
+[![Tests](https://img.shields.io/github/actions/workflow/status/arz-cle/mime-guard/tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/arz-cle/mime-guard/actions)
 [![Latest Version](https://img.shields.io/packagist/v/arz-cle/mime-guard.svg?style=flat-square)](https://packagist.org/packages/arz-cle/mime-guard)
 [![License](https://img.shields.io/github/license/arz-cle/mime-guard?style=flat-square)](LICENSE)
 [![Statamic 5+](https://img.shields.io/badge/Statamic-5.x_|_6.x-FF269E?style=flat-square)](https://statamic.com)
