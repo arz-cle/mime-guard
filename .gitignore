@@ -10,3 +10,5 @@ composer.lock
 # IDE
 .claude/
 .history/
+.idea/
+.vscode/
