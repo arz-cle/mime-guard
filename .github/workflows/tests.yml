@@ -25,7 +25,7 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ matrix.php }}
-          extensions: dom, curl, libxml, mbstring, zip, fileinfo, gd, exif
+          extensions: dom, curl, libxml, mbstring, zip, fileinfo, gd, exif, bcmath
           ini-values: memory_limit=512M
           coverage: none
 
@@ -37,14 +37,21 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ${{ steps.composer-cache.outputs.dir }}
-          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.json') }}
-          restore-keys: ${{ runner.os }}-composer-
+          key: ${{ runner.os }}-php-${{ matrix.php }}-composer-${{ hashFiles('**/composer.json') }}
+          restore-keys: ${{ runner.os }}-php-${{ matrix.php }}-composer-
 
       - name: Install dependencies
-        run: composer install --prefer-dist --no-interaction --no-progress
+        run: |
+          composer config allow-plugins.pixelfear/composer-dist-plugin true
+          composer install --prefer-dist --no-interaction --no-progress
+
+      - name: Create test directories
+        run: mkdir -p storage/statamic/addons/mime-guard
 
       - name: Run Pint
         run: vendor/bin/pint --test
 
       - name: Run Tests
         run: vendor/bin/pest --colors=always
+        env:
+          APP_KEY: base64:2fl+Ktvkfl+Fuz4Qp/A75G2RTiWVA/ZoKZvp6fiiM10=
