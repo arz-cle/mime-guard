@@ -6,7 +6,6 @@ namespace Arzou\MimeGuard\Tests;
 
 use Arzou\MimeGuard\ServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Statamic\Extend\Manifest;
 use Statamic\Providers\StatamicServiceProvider;
 use Statamic\Statamic;
 
@@ -39,15 +38,5 @@ abstract class TestCase extends Orchestra
         $app['config']->set('statamic.editions.pro', true);
         $app['config']->set('statamic.users.repository', 'file');
         $app['config']->set('statamic.stache.stores.asset-containers.directory', __DIR__.'/Fixtures/content/assets');
-    }
-
-    protected function getEnvironmentSetUp($app): void
-    {
-        $app->make(Manifest::class)->manifest = [
-            'arzou/mime-guard' => [
-                'id' => 'arzou/mime-guard',
-                'namespace' => 'Arzou\\MimeGuard',
-            ],
-        ];
     }
 }
