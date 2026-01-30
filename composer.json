@@ -12,7 +12,7 @@
     "assets",
     "file-upload"
   ],
-  "homepage": "https://github.com/arz-cle/Mime-Guard.git",
+  "homepage": "https://github.com/arz-cle/mime-guard.git",
   
   "license": "MIT",
   "type": "statamic-addon",
@@ -24,8 +24,8 @@
     }
   ],
   "support": {
-    "issues": "https://github.com/arz-cle/Mime-Guard.git/issues",
-    "source": "https://github.com/arz-cle/Mime-Guard.git"
+    "issues": "https://github.com/arz-cle/mime-guard.git/issues",
+    "source": "https://github.com/arz-cle/mime-guard.git"
   },
   "require": {
     "php": "^8.2",

@@ -1,7 +1,7 @@
 # MIME Guard
 
-[![Latest Version](https://img.shields.io/packagist/v/arz-cle/Mime-Guard.git.svg?style=flat-square)](https://packagist.org/packages/arz-cle/Mime-Guard.git)
-[![License](https://img.shields.io/packagist/l/arz-cle/Mime-Guard.git.svg?style=flat-square)](LICENSE)
+[![Latest Version](https://img.shields.io/packagist/v/arz-cle/mime-guard.git.svg?style=flat-square)](https://packagist.org/packages/arz-cle/mime-guard.git)
+[![License](https://img.shields.io/packagist/l/arz-cle/mime-guard.git.svg?style=flat-square)](LICENSE)
 [![Statamic 5+](https://img.shields.io/badge/Statamic-5.x_|_6.x-FF269E?style=flat-square)](https://statamic.com)
 [![PHP 8.2+](https://img.shields.io/badge/PHP-8.2+-777BB4?style=flat-square)](https://php.net)
 
@@ -25,7 +25,7 @@ A Statamic addon for granular MIME type management. Protect your assets by contr
 ## Installation
 
 ```bash
-composer require arz-cle/Mime-Guard.git
+composer require arz-cle/mime-guard.git
 ```
 
 The addon will be automatically discovered by Statamic.
