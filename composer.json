@@ -1,0 +1,73 @@
+{
+  "name": "arzou/mime-guard",
+  "description": "Statamic addon for granular MIME type management with hierarchical rules",
+  "keywords": [
+    "statamic",
+    "statamic-addon",
+    "mime",
+    "mime-type",
+    "security",
+    "upload",
+    "validation",
+    "assets",
+    "file-upload"
+  ],
+  "homepage": "https://github.com/arzou/mime-guard",
+  "license": "MIT",
+  "type": "statamic-addon",
+  "authors": [
+    {
+      "name": "Clément Arzoumanian",
+      "email": "contact@arzoumanian.fr",
+      "homepage": "https://arzoumanian.fr"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/arzou/mime-guard/issues",
+    "source": "https://github.com/arzou/mime-guard"
+  },
+  "require": {
+    "php": "^8.2",
+    "statamic/cms": "^5.0 || ^6.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^9.0 || ^10.0",
+    "pestphp/pest": "^3.0",
+    "laravel/pint": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Arzou\\MimeGuard\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Arzou\\MimeGuard\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "statamic": {
+      "name": "MIME Guard",
+      "description": "Granular MIME type management for asset uploads"
+    },
+    "laravel": {
+      "providers": [
+        "Arzou\\MimeGuard\\ServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true,
+      "pixelfear/composer-dist-plugin": true
+    }
+  },
+  "scripts": {
+    "test": "pest",
+    "test-coverage": "pest --coverage",
+    "lint": "pint",
+    "lint-check": "pint --test"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
