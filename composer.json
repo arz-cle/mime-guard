@@ -1,5 +1,5 @@
 {
-  "name": "arzou/mime-guard",
+  "name": "arz-cle/mime-guard",
   "description": "Statamic addon for granular MIME type management with hierarchical rules",
   "keywords": [
     "statamic",
@@ -12,7 +12,8 @@
     "assets",
     "file-upload"
   ],
-  "homepage": "https://github.com/arzou/mime-guard",
+  "homepage": "https://github.com/arz-cle/Mime-Guard.git",
+  
   "license": "MIT",
   "type": "statamic-addon",
   "authors": [
@@ -23,8 +24,8 @@
     }
   ],
   "support": {
-    "issues": "https://github.com/arzou/mime-guard/issues",
-    "source": "https://github.com/arzou/mime-guard"
+    "issues": "https://github.com/arz-cle/Mime-Guard.git/issues",
+    "source": "https://github.com/arz-cle/Mime-Guard.git"
   },
   "require": {
     "php": "^8.2",
